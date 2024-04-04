@@ -45,8 +45,8 @@
 
 (defcustom github-primer-color-theme "dark"
   "Color theme for github-primer-theme.
-Available options are: light, light-high-contrast, dark, dark-high-contrast
-and dark-dimmed (default)."
+Available options are: light, light-high-contrast, dark (default),
+dark-high-contrast and dark-dimmed."
   :group 'github-primer-theme
   :type '(choice (const :tag "Light" "light")
                  (const :tag "Light (High Contrast)" "light-high-contrast")
@@ -996,7 +996,6 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(woman-italic ((,class :inherit italic)))
   `(woman-addition ((,class :inherit font-lock-builtin-face)))
   `(woman-unknown ((,class :inherit font-lock-warning-face)))
-  ;; keep defaults for man
 
 ;;;;; dired
   `(dired-broken-symlink ((,class :foreground ,fg-warning :background ,bg-red)))
@@ -1514,7 +1513,6 @@ Also bind `class' to ((class color) (min-colors 89))."
 (github-primer-with-color-variables
  (custom-theme-set-variables
   'github-primer
-  ;; ansi-color vector (deprecated after Emacs 28)
   `(ansi-color-names-vector [,fg-black
                              ,fg-red
                              ,fg-green
