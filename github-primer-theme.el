@@ -1147,7 +1147,14 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(tab-bar-tab-group-current ((,class :inherit tab-bar-tab)))
   `(tab-bar-tab-group-inactive ((,class :inherit tab-bar-tab-inactive)))
   `(tab-bar-tab-ungrouped ((,class :inherit tab-bar-tab-inactive)))
-  `(tab-line ((,class :inherit tab-bar :background ,bg-hl :height 0.9)))
+  `(tab-line ((,class :inherit tab-bar :background ,bg-hl :height 0.9))) ;; tab-line-tab
+  `(tab-line-tab-current ((,class :inherit tab-bar-tab)))
+  `(tab-line-tab-highlight ((,class :inherit tab-bar-tab :forground ,fg-string)))
+  `(tab-line-tab-inactive ((,class :inherit tab-bar-tab-inactive)))
+  `(tab-line-tab-inactive-alternate ((,class :inherit tab-bar-tab-inactive)))
+  `(tab-line-tab-modified ((,class :foreground ,fg-constant)))
+  `(tab-line-close-highlight ((,class :foreground ,fg-red)))
+
 
 ;;;;; shell
   `(tty-menu-disabled-face ((,class :foreground ,fg-disabled :background ,bg-blue-max)))
