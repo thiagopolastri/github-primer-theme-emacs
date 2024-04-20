@@ -1290,6 +1290,34 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(org-agenda-done ((,class :foreground ,fg-success)))
   `(org-agenda-restriction-lock ((,class :background ,bg-max)))
 
+;;;;; proced
+  `(proced-cpu ((,class :foreground ,fg-purple :bold t)))
+  `(proced-emacs-pid ((,class :foreground ,fg-pink)))
+  `(proced-executable ((,class :foreground ,fg-cyan)))
+  `(proced-interruptible-sleep-status-code ((,class :foreground ,fg-comment)))
+  `(proced-mem ((,class :foreground ,fg-purple)))
+  `(proced-memory-high-usage ((,class :foreground ,fg-orange)))
+  `(proced-memory-low-usage ((,class :foreground ,fg-success)))
+  `(proced-memory-medium-usage ((,class :foreground ,fg-warning)))
+  `(proced-pgrp ((,class :foreground ,fg-string)))
+  `(proced-pid ((,class :foreground ,fg-string)))
+  `(proced-ppid ((,class :foreground ,fg-string)))
+  `(proced-run-status-code ((,class :foreground ,fg-green)))
+  `(proced-sess ((,class :foreground ,fg-blue)))
+  `(proced-session-leader-pid ((,class :foreground ,fg-blue :underline t)))
+  `(proced-time-colon ((,class :foreground ,fg-coral)))
+  `(proced-uninterruptible-sleep-status-code ((,class :foreground ,fg-error)))
+
+;;;;; speedbar
+  `(speedbar-button-face ((,class :foreground ,fg-success)))
+  `(speedbar-directory-face ((,class :foreground ,fg-dir)))
+  `(speedbar-file-face ((,class :foreground ,fg-cyan)))
+  `(speedbar-highlight-face ((,class :foreground ,fg :background ,bg-blue)))
+  `(speedbar-selected-face ((,class :foreground ,fg-keyword :underline t)))
+  `(speedbar-separator-face ((,class :foreground ,fg :background ,bg-blue :overline ,bd-light)))
+  `(speedbar-tag-face ((,class :foreground ,fg-variable)))
+
+
 ;;;; External
 
 ;;;;; artbollocks
@@ -1447,6 +1475,10 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(popup-scroll-bar-foreground-face ((,class :background ,bg-min)))
   `(popup-summary-face ((,class :background ,bg-max :foreground ,fg-comment)))
   `(popup-tip-face ((,class :background ,bg-max :foreground ,fg)))
+
+;;;;; smartparens
+  `(sp-wrap-overlay-closing-pair ((,class :inherit highlight :foreground ,fg-error)))
+  `(sp-wrap-overlay-opening-pair ((,class :inherit highlight :foreground ,fg-success)))
 
 ;;;;; Web Mode
   `(web-mode-bold-face ((,class :inherit bold)))
