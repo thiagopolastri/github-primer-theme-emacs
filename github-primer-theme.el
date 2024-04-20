@@ -1317,6 +1317,9 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(speedbar-separator-face ((,class :foreground ,fg :background ,bg-blue :overline ,bd-light)))
   `(speedbar-tag-face ((,class :foreground ,fg-variable)))
 
+;;;;; info
+  `(info-node ((,class :foreground ,fg :bold t :italic t)))
+  `(info-menu-star ((,class :foreground ,fg-red)))
 
 ;;;; External
 
