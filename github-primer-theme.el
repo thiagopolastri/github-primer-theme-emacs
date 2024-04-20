@@ -935,6 +935,7 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(nobreak-space ((,class :inherit escape-glyph :underline t)))
   `(homoglyph ((,class :foreground ,fg-cyan)))
   `(glyphless-char ((,class :height 0.6)))
+  `(edmacro-label ((,class :foreground ,fg-cyan-bright)))
 
 ;;;;; borders & lines
   `(vertical-border ((,class :foreground ,bd-light)))
@@ -945,6 +946,16 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(window-divider-last-pixel ((,class :inherit vertical-border)))
   `(separator-line ((,class :background ,bd-light :height 0.1)))
   `(fill-column-indicator ((,class :foreground ,bd-light)))
+  `(lv-separator ((,class :background ,bd-light)))
+
+;;;;; cua
+  `(cua-global-mark ((,class :foreground ,fg :background ,bg-yellow)))
+  `(cua-rectangle ((,class :foreground ,fg :background ,bg-red)))
+  `(cua-rectangle-noselect ((,class :foreground ,fg :background ,bg-min)))
+
+;;;;; calendar
+  `(diary ((,class :foreground ,fg-warning)))
+  `(holiday ((,class :background ,bg-orange)))
 
 ;;;;; line numbers
   `(line-number ((,class :foreground ,fg-disabled :background ,bg)))
@@ -1047,6 +1058,8 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(compilation-mode-line-exit ((,class :inherit success :weight bold)))
   `(compilation-mode-line-fail ((,class :inherit error)))
   `(compilation-mode-line-run ((,class :inherit warning :weight bold)))
+  `(ert-test-result-expected ((,class :background ,bg-green)))
+  `(ert-test-result-unexpected ((,class :background ,bg-red)))
 
 ;;;;; diff
   `(diff-added ((,class :foreground ,fg-success :background ,bg-green-max :extend t)))
@@ -1116,6 +1129,8 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(widget-documentation ((,class :foreground ,fg-green)))
   `(widget-inactive ((,class :inherit shadow)))
   `(widget-single-line-field ((,class :foreground ,fg :background ,bg-min)))
+  ;; icon
+  ;; icon-button
   `(custom-button ((,class :foreground ,fg :background ,bg)))
   `(custom-button-mouse ((,class :foreground ,fg-blue :background ,bg)))
   `(custom-button-pressed ((,class :foreground ,fg-disabled :background ,bg)))
@@ -1154,7 +1169,6 @@ Also bind `class' to ((class color) (min-colors 89))."
   `(tab-line-tab-inactive-alternate ((,class :inherit tab-bar-tab-inactive)))
   `(tab-line-tab-modified ((,class :foreground ,fg-constant)))
   `(tab-line-close-highlight ((,class :foreground ,fg-red)))
-
 
 ;;;;; shell
   `(tty-menu-disabled-face ((,class :foreground ,fg-disabled :background ,bg-blue-max)))
