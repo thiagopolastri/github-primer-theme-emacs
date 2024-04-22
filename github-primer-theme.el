@@ -1,7 +1,7 @@
 ;;; github-primer-theme.el --- port of Github themes for Emacs -*- lexical-binding: t -*-
 
 ;; Author: Thiago Polastri
-;; Version: 1.0.0
+;; Version: 1.0.1
 ;; Keywords: faces themes
 ;; Package-Requires: ((emacs "27.1"))
 
